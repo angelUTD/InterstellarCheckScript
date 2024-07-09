@@ -5,14 +5,18 @@ all to ensure I do not miss these tickets. will have this set-up to run every 15
 It will take adavantage of Beautiful Soup, smtplib, os,and requests libraries.
 
 ![alt text](https://github.com/angelUTD/InterstellarCheckScript/blob/main/EmailScreenShot.png?raw=true)
-
-## "main.py"
+## The code
+# main
 Its the driver code mostly here to call the need functions.
 
-## "checkAndEmail.py" 
-# "webScraper()"
-This file does all the heavy lifting, it will be in charge of checking the Cinemark website to see if the movie "Interstellar" tickets are available for early access purchase. This is done by using Beautiful soup library inorder to parse through all movie titles in the coming soon tab of cinemark. Also taking advantage of the requst library in order to create a snapchat of the website. Link to cinemark page im referring to: https://www.cinemark.com/movies/events and https://www.cinemark.com/movies/coming-soon.
+# checkAndEmail:
+ -"webScraper()"
+This method will be in charge of checking the Cinemark website to see if the movie "Interstellar" tickets are available for early access purchase. This is done by using Beautiful soup library inorder to parse through all movie titles in the coming soon tab of cinemark. Also taking advantage of the requst library in order to create a snapchat of the website. Link to cinemark page im referring to: https://www.cinemark.com/movies/events and https://www.cinemark.com/movies/coming-soon.
+ 
+ -"sendEmail()"
+ Will do just that send an email by using the server and smtplib library to make a connection between gmail and the local machine, to send a small message with a link to buy the tickets.
 
-# "logger.py"
+## logger:
+- "logger.py"
 This file is here to create a log to keep an eye on how the script is running or if its running at all.
 It will store the current time and a message of its results of whether or not the tickets were found.

@@ -5,7 +5,8 @@ all to ensure I do not miss these tickets. will have this set-up to run every 15
 It will take adavantage of Beautiful Soup, smtplib, os,and requests libraries.
 
 ![alt text](https://github.com/angelUTD/InterstellarCheckScript/blob/main/EmailScreenShot.png?raw=true)
-## The code
+
+
 # main
 Its the driver code mostly here to call the need functions.
 

@@ -24,8 +24,8 @@ def sendEmail():
     dotenv_path = os.path.join(os.path.dirname(__file__), 'resources', '.env')
     load_dotenv(dotenv_path)
     key = os.getenv("CINEMA_PASSKEY")
+    email = os.getenv("EMAIL")
 
-    email ="acalixbarrera1@gmail.com"
     subject = "The Movie Lords has blessed you with goodnews"
     message = "Interstellar Tickets are now on sale so go get that done! Dont even bother asking your self what you know what dumbass! \n https://www.cinemark.com/theatres/tx-dallas/cinemark-dallas-xd-and-imax"
 

@@ -27,7 +27,7 @@ def sendEmail():
     email = os.getenv("EMAIL")
 
     subject = "The Movie Lords has blessed you with goodnews"
-    message = "Interstellar Tickets are now on sale so go get that done! Dont even bother asking your self what you know what dumbass! \n https://www.cinemark.com/theatres/tx-dallas/cinemark-dallas-xd-and-imax"
+    message = "Interstellar Tickets are now on sale so go get that done! Heres the link ;) \n https://www.cinemark.com/theatres/tx-dallas/cinemark-dallas-xd-and-imax"
 
     text = f"Subject: {subject}\n\n{message}"
 

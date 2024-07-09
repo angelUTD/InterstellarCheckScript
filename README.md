@@ -11,10 +11,10 @@ It will take adavantage of Beautiful Soup, smtplib, os,and requests libraries.
 Its the driver code mostly here to call the need functions.
 
 # checkAndEmail:
- -"webScraper()"
+ - "webScraper()"
 This method will be in charge of checking the Cinemark website to see if the movie "Interstellar" tickets are available for early access purchase. This is done by using Beautiful soup library inorder to parse through all movie titles in the coming soon tab of cinemark. Also taking advantage of the requst library in order to create a snapchat of the website. Link to cinemark page im referring to: https://www.cinemark.com/movies/events and https://www.cinemark.com/movies/coming-soon.
  
- -"sendEmail()"
+ - "sendEmail()"
  Will do just that send an email by using the server and smtplib library to make a connection between gmail and the local machine, to send a small message with a link to buy the tickets.
 
 ## logger:

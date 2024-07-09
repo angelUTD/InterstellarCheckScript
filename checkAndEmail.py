@@ -7,17 +7,23 @@ from dotenv import load_dotenv, dotenv_values
 
 def  webScraper():
     url = 'https://www.cinemark.com/movies/coming-soon'
+    url2 = 'https://www.cinemark.com/movies/events'
     movie = "Instellar"
     movie2 = "Interstellar Early access"
 
     comingSoonPage = requests.get(url)
     soup = BeautifulSoup(comingSoonPage.text, "html.parser")
-
-    quotes = soup.find_all('div', class_='title')
-    for i in quotes:
-        if i.contents[0] == f"{movie}" or i.contents[0] == f"{movie2}":
+    quotesComingSoon = soup.find_all('div', class_='title')
+    quotesEvent = soup.find_all('div', class_='title')
+    
+    for c in quotesComingSoon:
+        if c.contents[0] == f"{movie}" or c.contents[0] == f"{movie2}":
             return True
             print("Tickets are out fool get them asap!!!!!")
+
+    for e in quotesEvent:
+        if e.contonts[0] == f"{movie}" or e.contents[0] == f"{movie2}":
+            return True
 
 
 def sendEmail():
